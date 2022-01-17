@@ -1,0 +1,635 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.black{
+
+}
+/* noto-sans-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Noto Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+	url('../fonts/noto-sans-v21-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/noto-sans-v21-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-700 - latin_cyrillic */
+@font-face {
+	font-family: 'Noto Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+	url('../fonts/noto-sans-v21-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/noto-sans-v21-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body{
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: black;
+}
+.wrapper{
+	max-width: 1375px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.main{
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-top: 198px;
+}
+/* Header start */
+.header_burger{
+	position: absolute;
+	height: 2px;
+	width: 16px;
+	background: black;
+	top: 18px;
+	left: -59px;
+}
+.header_burger:before{
+	display: block;
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 16px;
+	background: black;
+	top: -4px;
+	left: 0;
+}
+.header_burger:after{
+	display: block;
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 16px;
+	background: black;
+	top: 4px;
+	left: 0;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+}
+.header_wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 93px;
+	margin-top: 40px;
+	border-bottom: 1px solid #E1E1E1;
+}
+.header_nav{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.header_list-item{
+	margin-left: 30px;
+}
+.header_item-link{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 19px;
+	color: #000000;
+}
+.header_form{
+	position: relative;
+	margin-left: 47px;
+}
+.header_menu{
+	padding-left: 41px;
+}
+.header_logo{
+	position: relative;
+	padding-right: 17px;
+}
+.header_form-link1{
+	position: absolute;
+	top: 15px;
+	left: 25px;
+}
+.header_form-link{
+	position: absolute;
+	top: 15px;
+	right: 28px;
+}
+.header_form-search{
+	min-width: 405px;
+	height: 54px;
+	border-radius: 50px;
+	background: #F3F3F3;
+	padding-left: 70px;
+}
+.header_form-search::placeholder{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.header_menu-link{
+	width: 100%;
+	height: 100%;
+}
+/* Header end */
+/* First_Section start */
+.first_section-title{
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 49px;
+}
+.warning{
+	margin: 40px 0 0 0;
+	background: #0058A3;
+	padding: 48px 0 0 48px;
+}
+.warning_title{
+	padding: 0 0 8px 0;
+	background: #0058A3;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 34px;
+	color: #FFFFFF;
+}
+.warning_text{
+	max-width: 758px;
+	padding: 0 0 32px 0;
+	font-size: 14px;
+	line-height: 21px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+.warning_button{
+	margin: 0 0 48px 0;
+}
+.warning_button-link{
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	color: #000000;
+}
+.warning_button{
+	background: #FFFFFF;
+	min-height: 40px;
+	width: 379px;
+	border-radius: 50px;
+}
+.relax_section-title{
+	max-width: 560px;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 34px;
+	color: #000000;
+}
+.relax_section{
+	position: relative;
+	margin: 64px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.relax_section-text{
+	padding: 8px 0 0 0  ;
+	max-width: 560px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+}
+.relax_section-button{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	min-height: 40px;
+	width: 181px;
+	background: #FFFFFF;
+	border: 1px solid #E1E1E1;
+	border-radius: 50px;
+}
+.relax_button-link{
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	color: #000000;
+}
+.section_img{
+	position: relative;
+	display: flex;
+	padding-top: 32px;
+}
+.first_section-img{
+	background:transparent url(../img/ikea_icon/active.svg)no-repeat left 10px top 10px;
+	position: relative;
+	margin: 0 0 0 19px;
+	flex: 0 1 50%;
+}
+.first_section-img:nth-child(1){
+	margin: 0;
+}
+.first_section-pic{
+	width: 100%;
+}
+.link_pic1{
+	position: absolute;
+	top: 472px;
+	left: 140px;
+}
+.link_pic2{
+	position: absolute;
+	top: 578px;
+	left: 333px;
+}
+.link_pic3{
+	position: absolute;
+	top: 363px;
+	left: 405px;
+}
+.link_pic4{
+	position: absolute;
+	top: 203px;
+	right: 174px;
+}
+.link_pic5{
+	position: absolute;
+	top: 104px;
+	right: 165px;
+}
+.link_pic6{
+	position: absolute;
+	top: 517px;
+	right: 235px;
+}
+/*.section_product-info span:nth-child(1){*/
+/*	font-weight: bold;*/
+/*	font-size: 14px;*/
+/*	line-height: 20px;*/
+/*	color: #CA5008;*/
+/*}*/
+/*.section_product-info span:nth-child(2){*/
+/*	font-weight: bold;*/
+/*	font-size: 14px;*/
+/*	line-height: 20px;*/
+/*	color: #000000;*/
+/*}*/
+/*.section_product-info span:nth-child(3){*/
+/*	font-size: 14px;*/
+/*	line-height: 20px;*/
+/*	color: #484848;*/
+/*	opacity: 0.8;*/
+/*}*/
+/*.section_product-info span:nth-child(4){*/
+/*	font-weight: bold;*/
+/*	font-size: 16px;*/
+/*	line-height: 19px;*/
+/*	color: #000000;*/
+/*}*/
+
+.first_section-product{
+	max-width: 180px;
+	padding: 15px 30px 15px 15px;
+	position: absolute;
+	top: 442px;
+	left: 259px;
+	background: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+}
+.first_section-product:before{
+	display: block;
+	content:"";
+	position: absolute;
+	left: 157px;
+	top: 18px;
+	width: 100%;
+	height: 100%;
+	background:transparent url(../img/ikea_icon/vector.svg) no-repeat;
+}
+.section_product-info{
+}
+.first_section-product p:nth-child(1){
+	margin: 0 0 4px 0;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	color: #CA5008;
+}
+.first_section-product p:nth-child(2){
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+}
+.first_section-product p:nth-child(3){
+	margin: 0 0 16px 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #484848;
+}
+.first_section-product p:nth-child(4){
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+}
+.section_product-info span{
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 13px;
+	color: #000000;
+}
+.first_section-product1 p:nth-child(1){
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+}
+.first_section-product1 p:nth-child(2){
+	margin: 0 0 16px 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #484848;
+}
+.first_section-product1 p:nth-child(3){
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+}
+.first_section-product1:before{
+	display: block;
+	content:"";
+	position: absolute;
+	left: 157px;
+	top: 18px;
+	width: 100%;
+	height: 100%;
+	background:transparent url(../img/ikea_icon/vector.svg) no-repeat;
+}
+.first_section-product1{
+	max-width: 180px;
+	padding: 15px 30px 15px 15px;
+	position: absolute;
+	top: 167px;
+	left: 269px;
+	background: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+}
+/*First_Section end*/
+/*Section_Games start*/
+.section_games{
+	display: flex;
+	padding: 128px 0 0 0;
+}
+.section_games-img{
+	position: relative;
+}
+.section_games-info{
+	background: #E5456D;
+}
+.games_info-title{
+	margin: 0 0 8px 0;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 34px;
+	color: #000000;
+}
+.games_info-text{
+	margin: 0 0 32px 0;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+}
+.section_games-info{
+	padding: 48px 55px 0 49px;
+}
+.info_button-text{
+	display: flex;
+	margin: 12px 24px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.games_info-button{
+	background: #000000;
+	border-radius: 50px;
+}
+.section_games-product{
+	max-width: 180px;
+	padding: 15px 30px 15px 15px;
+	position: absolute;
+	top: 290px;
+	left: 328px;
+	background: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+}
+.section_games-product p:nth-child(1){
+	margin: 0 0 4px 0;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	color: #CA5008;
+}
+.section_games-product p:nth-child(2){
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+}
+.section_games-product p:nth-child(3){
+	margin: 0 0 16px 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #484848;
+}
+.section_games-product p:nth-child(4){
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+}
+.section_games-information span{
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 13px;
+	color: #000000;
+}
+.section_games-product:before{
+	display: block;
+	content:"";
+	position: absolute;
+	left: 157px;
+	top: 18px;
+	width: 100%;
+	height: 100%;
+	background:transparent url(../img/ikea_icon/vector.svg) no-repeat;
+}
+.section_games-img a:nth-child(1){
+	position: absolute;
+	top: 349px;
+	left: 288px;
+}
+.section_games-img a:nth-child(2){
+	position: absolute;
+	top: 144px;
+	left: 429px;
+}
+.section_games-img a:nth-child(3){
+	position: absolute;
+	top: 410px;
+	left: 557px;
+}
+/*Section_Games end*/
+/*Section_Delivery start*/
+.section_delivery{
+	padding: 64px 0;
+	display: flex;
+}
+.delivery_info{
+	background: #F5F5F5;
+	flex: 0 1 50%;
+	padding: 32px 0;
+	text-align: center;
+	margin-left: 1px;
+}
+.delivery_info:nth-child(1){
+	margin-left: 0;
+}
+.delivery_info-title{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	color: #111111;
+}
+.delivery_info-text{
+	font-size: 14px;
+	line-height: 21px;
+	color: #484848;
+}
+.delivery_info-link{
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+	transition: 0.3s;
+}
+.delivery_info-link:hover{
+	box-shadow: 0 1px 0 black;
+}
+/*Section_Delivery end*/
+/*News start*/
+.news_title{
+	padding: 0 0 32px 0 ;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 34px;
+	color: #111111;
+}
+.slider_title{
+	max-width: 370px;
+	height: 80px;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 34px;
+	color: #000000;
+}
+.slider:nth-child(1){
+	background: #F5F5F5;
+}
+.slider:nth-child(2){
+	background: #C1CDDC;
+}
+.slider:nth-child(3){
+	background: #DFD0C8;
+}
+.slider:nth-child(4){
+	background: #F5F5F5;
+}
+.slider:nth-child(5){
+	background: #C1CDDC;
+}
+.news_slider{
+	display: inline-flex;
+	width: 1345px;
+	overflow: scroll;
+}
+.news_slider:nth-child(1){
+}
+.slider_img{
+}
+.slider{
+	margin: 0 0 0 20px;
+}
+.slider:nth-child(1){
+	margin: 0;
+}
+.slider_img-pic{
+}
+.slider_button{
+	margin-top: 90px;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: black url(../img/ikea_icon/icon_vector.svg) no-repeat center;
+}
+.slider_info{
+	padding: 32px;
+}
+/*News end*/
+/*Sale start*/
+.section_sale{
+	padding: 75px 0;
+}
+.sale_title{
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 34px;
+	color: #000000;
+}
+.slider_sale{
+	padding-top: 36px;
+}
+
+
+
+
+/*Sale end*/
